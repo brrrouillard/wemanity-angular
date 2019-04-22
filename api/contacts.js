@@ -67,6 +67,13 @@ router.get("/:number", (req, res) => {
   });
 });
 
+router.get("/id/:id", (req, res) => {
+  Contact.find({ _id: req.params.id }, (err, contact) => {
+    if (err) res.status(400).send({ msg: "Error" + err });
+    res.status(200).send(contact);
+  });
+});
+
 router.put("/:id", (req, res) => {
   Contact.findById(req.params.id, (err, contact) => {
     if (err) res.status(400).send({ msg: "Error " + err });

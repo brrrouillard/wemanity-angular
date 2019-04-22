@@ -1,0 +1,120 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header > .title {
+  color: white;
+  font-size: 350%;
+  margin-bottom: 1%;
+  font-weight: 100;
+}
+
+.header > hr {
+  color: white;
+  opacity: 0.3;
+  width: 50%;
+}
+.container {
+  background-color: #00b5ad;
+  border-radius: 3%;
+  padding: 0 3%;
+  width: 40vw;
+}
+
+#ContactInfo {
+    display: flex;
+    color: #333;
+    width: 100%;
+    font-size: 115%;
+    padding-bottom: 2%;
+
+}
+
+#ContactInfo > div {
+    flex: 1;
+    text-align: left;
+}
+
+#ContactInfo > #name {
+    flex: 3;
+    font-weight: normal;
+}
+
+#ContactInfo > #number {
+    flex: 2;
+    font-weight: 200;
+}
+
+#ContactInfo > a > #editButton {
+    background: #fff;
+    border: 0;
+    color: #00b5ad;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 3%;
+    font-size: 100%;
+    font-weight: 200;
+}
+
+#ContactInfo > a > #editButton:hover {
+    opacity: 0.95;
+    transform: scale(0.95);
+}
+
+#ContactInfo > a > #editButton:active {
+    transform: scale(0.90);
+}
+
+#SearchField {
+    width: 80%;
+    margin-bottom: 2%;
+}
+#SearchField > #search-input {
+    font-weight: 100;
+    color: #333;
+    margin: 3% 0;
+    font-Size: 150%;
+    width: 100%;
+}
+
+#add-new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-new > a > button {
+    background: #fff;
+    border: 0;
+    color: #00b5ad;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 3%;
+    margin: 3%;
+    font-size: 130%;
+    padding: 1%;
+    transition-duration: 120ms;
+}
+
+#add-new > a > button:hover {
+    transition-duration: 120ms;
+    opacity: 0.95;
+    transform: scale(0.96);
+}
+
+#add-new > a > button:active {
+    transition-duration: 120ms;
+    transform: scale(0.93);
+}

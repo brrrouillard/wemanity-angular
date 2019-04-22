@@ -1,0 +1,28 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header > .title {
+  color: white;
+  font-size: 350%;
+  margin-bottom: 1%;
+  font-weight: 100;
+}
+
+.header > hr {
+  color: white;
+  opacity: 0.3;
+  width: 50%;
+}
