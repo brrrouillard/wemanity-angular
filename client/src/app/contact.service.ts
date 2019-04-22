@@ -1,15 +1,13 @@
 import { Injectable } from "@angular/core";
 import { Contact } from "./contact.class";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
-import { Observable, of } from "rxjs";
-import { catchError, map, tap } from "rxjs/operators";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: "root"
 })
 export class ContactService {
   private contactsUrl: string = "https://wemanity-kata.herokuapp.com/contacts/";
-  private contacts: Contact[];
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -27,11 +25,11 @@ export class ContactService {
     return this.http.get<Contact>(this.contactsUrl + "/id/" + id);
   }
 
-  addContact(contact) {
+  addContact(contact) { // POST Request
     return this.http.post(this.contactsUrl, contact, this.httpOptions);
   }
 
-  updateContact(id, contact) {
+  updateContact(id, contact) { // PUT Request
     return this.http.put(this.contactsUrl + id, contact, this.httpOptions);
   }
 }

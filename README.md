@@ -1,7 +1,8 @@
 # Wemanity Kata
 
 ## Prerequisites
-- NodeJS (if you want to run the server)
+- NodeJS
+- NPM
 - Any web navigator
 
 ## Installing and Running
@@ -9,28 +10,7 @@
 ### Live
 You can already access the API live on [Heroku](https://wemanity-kata.herokuapp.com/contacts/).
 
-Navigate to `./client/` then run `npm install` then  `npm start` . You can now access the app on [localhost:3000/](http://localhost:3000/)
-
-### Local
-
-If you want to run it on a local machine :
-1. You will have to create a ` ./config/private_keys.js ` file (which I didn't include here for obvious security reasons) with the following structure 
-~~~~
-const keys = {
-    mongoURI:
-      "YOUR_MONGO_URI"
-  };
-  
-  module.exports = keys;
-~~~~
-
-2. To redirect AJAX calls, navigate to `./client/src/` and change the apiURL variable at the beginning of the following files : `./Home/SearchContainer.js`, `./EditContact/EditContactContainer.js` and `./AddContact/AddContactContainer.js`
-
-3. Install dependencies running `npm install` in the root folder and in `./client/`
-
-4. Launch the server running `node server.js` in the root folder
-
-5. Launch the client running `npm start` in the `./client/` folder.
+Navigate to `./client/` then run `npm install` then  `npm start` . You can now access the app on [localhost:4200/](http://localhost:4200/)
 
 
 ## API Endpoints
@@ -44,14 +24,14 @@ const keys = {
 
 
 ## Missing
-Since I did this Kata under time pressure, I tried to focus on the main functionnalities. There is great room for improvement, especially in UI / UX, responsiveneness (I didn't have time to test it for mobile) code cleaning and comments. 
+I did this Kata to practice Angular which I tried to learn by myself during the last days. It challenged me a lot on some points but it went well in the end. I tried to write it the "Angular way" and tried not to just transpose the React logic I used to know. 
 
-I have to admit that creating a full app, which includes designing, writting an entire API (and deploying it) and creating a multi-pages web app under 4 hours challenged me a lot. 
+I think it could be improved by creating more smaller components with more imbrication to help maintaining it. Unfortunately this is something I still have to practice in Angular (especially passing data from child to parent).
 
-Anyway, it was a pretty cool experience since I'm not used to work under pressure !
+Files and folders name are not that clean as well but I found that Angular CLI was not able to rename components yet, and doing it by hand would make me create a lot of path mistakes. Next time I'll have to analyze and design my components architecture better.
 
 ## Built With
-* React
+* Angular
 * Express (nodeJS)
 * MongoDB
 * [Visual Studio Code](https://code.visualstudio.com/) 

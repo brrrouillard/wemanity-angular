@@ -58,14 +58,14 @@ export class ContactsEditComponent implements OnInit {
         lastName: this.lastName,
         number: this.number
       };
-      if (this.isNew) { // If it's a new contact we have to POST
-        this.contactService
-          .addContact(newContact)
-          .subscribe(res => {
-            if (res.msg === "OK") this.message = "Contact added!";
-            else this.message = `Error : ${res.msg}`;
-          });
-      } else { // If not we have to PUT
+      if (this.isNew) {
+        // If it's a new contact we have to POST
+        this.contactService.addContact(newContact).subscribe(res => {
+          if (res.msg === "OK") this.message = "Contact added!";
+          else this.message = `Error : ${res.msg}`;
+        });
+      } else {
+        // If not we have to PUT
         this.contactService
           .updateContact(this.id, newContact)
           .subscribe(res => {
