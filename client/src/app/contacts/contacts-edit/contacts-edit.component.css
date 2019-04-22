@@ -1,0 +1,86 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header > .title {
+  color: white;
+  font-size: 350%;
+  margin-bottom: 1%;
+  font-weight: 100;
+}
+
+.header > hr {
+  color: white;
+  opacity: 0.3;
+  width: 50%;
+}
+.container {
+  background-color: #00b5ad;
+  border-radius: 3%;
+  padding: 0 3%;
+  width: 40vw;
+}
+#EditContactContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#EditContactContainer > #title {
+  color: white;
+  font-weight: 200;
+  margin: 2% 0;
+}
+
+#EditContactContainer > h5 {
+  margin: 1% 0;
+  font-weight: 300;
+  font-size: 120%;
+}
+
+#EditContactContainer > input {
+  font-weight: 100;
+  color: #333;
+  margin: 2% 0;
+  font-size: 150%;
+  width: 80%;
+  padding: 1%;
+}
+
+button {
+  background: #fff;
+  border: 0;
+  color: #00b5ad;
+  font-weight: bolder;
+  cursor: pointer;
+  border-radius: 3%;
+  margin: 1%;
+  font-size: 130%;
+  padding: 2%;
+}
+
+button:hover {
+  transition-duration: 150ms;
+  opacity: 0.95;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: #00b5ad;
+}

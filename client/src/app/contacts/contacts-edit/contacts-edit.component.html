@@ -1,3 +1,25 @@
-<p>
-  contacts-edit works!
-</p>
+<div class="container">
+  <div class="header">
+    <h1 class="title">Phone Book</h1>
+    <hr />
+  </div>
+  <div id="EditContactContainer">
+    <h1 id="title">{{ title }}
+    </h1>
+    <h5>{{ message }}</h5>
+    <input
+      placeholder="First Name"
+      [(ngModel)]="firstName"
+    />
+    <input
+      placeholder="Last Name"
+      [(ngModel)]="lastName"
+    />
+    <input
+      placeholder="Number (+XX XX XXXXX...)"
+      [(ngModel)]="number"
+    />
+    <button (click)="handleSubmit()">Save</button>
+    <button><a routerLink="/home">Back</a></button>
+  </div>
+</div>

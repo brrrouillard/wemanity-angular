@@ -28,7 +28,7 @@ router.post("/", (req, res) => {
       .then(() => res.status(200).send({ msg: "OK" }));
   }
   else {
-    res.status(400).send({MSG: "Number error"})
+    res.status(400).send({msg: "Number error"})
   }
 });
 
