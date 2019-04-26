@@ -1,4 +1,4 @@
-<div id="SearchField">
+<div id="search-field">
   <input
     type="text"
     placeholder="Enter a name or a number..."
@@ -7,7 +7,7 @@
     (ngModelChange)="handleInput($event)"
   />
 </div>
-<div id="ContactInfo" *ngFor="let contact of contacts">
+<div id="contact-info" *ngFor="let contact of contacts">
   <div id="name">{{ contact.firstName }} {{ contact.lastName }}</div>
   <div id="number">{{ contact.number }}</div>
   <a [routerLink]="['/edit', contact._id]"

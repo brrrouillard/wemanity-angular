@@ -1,4 +1,4 @@
-#ContactInfo {
+#contact-info {
     display: flex;
     color: #333;
     width: 100%;
@@ -7,22 +7,22 @@
 
 }
 
-#ContactInfo > div {
+#contact-info > div {
     flex: 1;
     text-align: left;
 }
 
-#ContactInfo > #name {
+#contact-info > #name {
     flex: 3;
     font-weight: normal;
 }
 
-#ContactInfo > #number {
+#contact-info > #number {
     flex: 2;
     font-weight: 200;
 }
 
-#ContactInfo > a > #editButton {
+#contact-info > a > #editButton {
     background: #fff;
     border: 0;
     color: #00b5ad;
@@ -33,20 +33,20 @@
     font-weight: 200;
 }
 
-#ContactInfo > a > #editButton:hover {
+#contact-info > a > #editButton:hover {
     opacity: 0.95;
     transform: scale(0.95);
 }
 
-#ContactInfo > a > #editButton:active {
+#contact-info > a > #editButton:active {
     transform: scale(0.90);
 }
 
-#SearchField {
+#search-field {
     width: 80%;
     margin-bottom: 2%;
 }
-#SearchField > #search-input {
+#search-field > #search-input {
     font-weight: 100;
     color: #333;
     margin: 3% 0;

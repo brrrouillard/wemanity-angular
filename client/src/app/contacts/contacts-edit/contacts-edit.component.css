@@ -1,22 +1,22 @@
-#EditContactContainer {
+#contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#EditContactContainer > #title {
+#contact-container > #title {
   color: white;
   font-weight: 200;
   margin: 2% 0;
 }
 
-#EditContactContainer > h5 {
+#contact-container > h5 {
   margin: 1% 0;
   font-weight: 300;
   font-size: 120%;
 }
 
-#EditContactContainer > input {
+#contact-container > input {
   font-weight: 100;
   color: #333;
   margin: 2% 0;
