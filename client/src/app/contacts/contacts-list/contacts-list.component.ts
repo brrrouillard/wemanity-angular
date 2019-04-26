@@ -11,6 +11,7 @@ import { ContactEntryComponent } from './contact-entry/contact-entry.component';
 export class ContactsListComponent implements OnInit {
   private input: string = "";
   private contacts: Contact[];
+  private loading:boolean = true;
 
   constructor(private contactService: ContactService) {}
 
@@ -20,7 +21,10 @@ export class ContactsListComponent implements OnInit {
 
   getContacts(): void {
     this.contactService.getContacts(this.input)
-    .subscribe(contacts => this.contacts = contacts);
+    .subscribe(contacts => {
+      this.contacts = contacts;
+      this.loading = false;
+    });
   }
 
   handleInput(searchValue: string) {

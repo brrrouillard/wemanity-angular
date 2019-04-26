@@ -1,47 +1,3 @@
-#contact-info {
-    display: flex;
-    color: #333;
-    width: 100%;
-    font-size: 115%;
-    padding-bottom: 2%;
-
-}
-
-#contact-info > div {
-    flex: 1;
-    text-align: left;
-}
-
-#contact-info > #name {
-    flex: 3;
-    font-weight: normal;
-}
-
-#contact-info > #number {
-    flex: 2;
-    font-weight: 200;
-}
-
-#contact-info > a > #editButton {
-    background: #fff;
-    border: 0;
-    color: #00b5ad;
-    font-weight: bolder;
-    cursor: pointer;
-    border-radius: 3%;
-    font-size: 100%;
-    font-weight: 200;
-}
-
-#contact-info > a > #editButton:hover {
-    opacity: 0.95;
-    transform: scale(0.95);
-}
-
-#contact-info > a > #editButton:active {
-    transform: scale(0.90);
-}
-
 #search-field {
     width: 80%;
     margin-bottom: 2%;
@@ -52,6 +8,12 @@
     margin: 3% 0;
     font-Size: 150%;
     width: 100%;
+}
+
+.loading-text {
+    font-size: 180%;
+    font-weight: 200;
+    text-align: center;
 }
 
 #add-new {
