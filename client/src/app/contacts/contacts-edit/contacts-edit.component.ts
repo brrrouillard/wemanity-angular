@@ -9,7 +9,7 @@ import { ContactService } from "../../contact.service";
 })
 export class ContactsEditComponent implements OnInit {
   private id: string;
-  private isNew: boolean;
+  private isNew: boolean; 
 
   private title: string;
   private firstName: string;
