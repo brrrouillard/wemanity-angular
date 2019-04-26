@@ -29,6 +29,7 @@ export class ContactsListComponent implements OnInit {
 
   handleInput(searchValue: string) {
     this.input = searchValue;
+    console.log(this.input);
     this.getContacts();
   }
 }
