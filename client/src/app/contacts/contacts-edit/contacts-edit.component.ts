@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { Contact } from "../../contact.class";
 import { ActivatedRoute } from "@angular/router";
 import { ContactService } from "../../contact.service";
+
+import { Contact } from "../../models/contact";
 
 @Component({
   selector: "app-contacts-edit",
@@ -61,8 +62,8 @@ export class ContactsEditComponent implements OnInit {
       if (this.isNew) {
         // If it's a new contact we have to POST
         this.contactService.addContact(newContact).subscribe(res => {
-          if (res.msg === "OK") this.message = "Contact added!";
-          else this.message = `Error : ${res.msg}`;
+          if (res['msg'] === "OK") this.message = "Contact added!";
+          else this.message = `Error : ${res['msg']}`;
         });
       } else {
         // If not we have to PUT
