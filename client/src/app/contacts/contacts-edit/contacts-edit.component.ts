@@ -47,7 +47,7 @@ export class ContactsEditComponent implements OnInit {
   }
 
   handleSubmit(): void {
-    if (this.firstName === "" || this.lastName === "" || this.number === "")
+    if (!this.firstName || !this.lastName|| !this.number)
       this.message = "Please fill all fields";
     else if (!this.number.match(/^[+][0-9][0-9][ ][0-9][0-9][ ][0-9]*/))
       this.message = "Please enter a valid phone number";
