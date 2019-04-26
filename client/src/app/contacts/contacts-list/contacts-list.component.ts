@@ -3,11 +3,11 @@ import { Contact } from '../../models/contact';
 import { ContactService } from '../../contact.service';
 
 @Component({
-  selector: "app-contacts-container",
-  templateUrl: "./contacts-container.component.html",
-  styleUrls: ["./contacts-container.component.css"]
+  selector: "app-contacts-list",
+  templateUrl: "./contacts-list.component.html",
+  styleUrls: ["./contacts-list.component.css"]
 })
-export class ContactsContainerComponent implements OnInit {
+export class ContactsListComponent implements OnInit {
   private input: string = "";
   private contacts: Contact[];
 

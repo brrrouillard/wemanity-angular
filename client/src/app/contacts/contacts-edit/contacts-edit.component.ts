@@ -2,8 +2,6 @@ import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { ContactService } from "../../contact.service";
 
-import { Contact } from "../../models/contact";
-
 @Component({
   selector: "app-contacts-edit",
   templateUrl: "./contacts-edit.component.html",

@@ -5,13 +5,13 @@ import { HttpClientModule }    from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactsContainerComponent } from './contacts/contacts-container/contacts-container.component';
+import { ContactsListComponent } from './contacts/contacts-list/contacts-list.component';
 import { ContactsEditComponent } from './contacts/contacts-edit/contacts-edit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactsContainerComponent,
+    ContactsListComponent,
     ContactsEditComponent
   ],
   imports: [
